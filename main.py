@@ -17,6 +17,7 @@ def classification(file_name: str, model, class_names):
     classifier.classifie_image()
     return classifier.score, classifier.classified_class
 
+
 if __name__ == "__main__":
     model, class_names = run_model()
     classification("cama.jpg", model, class_names)

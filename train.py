@@ -57,7 +57,7 @@ class Training:
         num_classes = len(self.class_names)
         self.model = Sequential([
             data_augmentation,
-            layers.Rescaling(1./255),
+            layers.Rescaling(1. / 255),
             layers.Conv2D(16, 3, padding='same', activation='relu'),
             layers.MaxPooling2D(),
             layers.Conv2D(32, 3, padding='same', activation='relu'),

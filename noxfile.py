@@ -2,6 +2,8 @@ import nox
 
 
 locations = ".", "noxfile.py"
+
+
 @nox.session(python=["3.10"])
 def lint(session):
     args = session.posargs or locations
