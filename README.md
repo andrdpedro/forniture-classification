@@ -3,7 +3,7 @@
  <a href="#objective">Objetivo</a> •
  <a href="#technologies">Technologies</a> • 
  <a href="#userguide">How to Use</a> • 
- <a href="#autor">Autor</a>
+ <a href="#author">Author</a>
 </p>
 
 <h1 align="center" href="#objective">This project has the objective to classificate fornitures (Chair, Bed, Sofa), using Deep Learning</h1>
@@ -20,3 +20,5 @@
 <p>- docker build -t fornitureimage .</p>
 <p>- docker run -d --name forniturecontainer -p 80:80 fornitureimage</p>
 <p>- Now you can access the API on http://127.0.0.1/docs</p>
+
+<h1 href="#author">The author of this project is Pedro Andrade. Thanks for using it.</h1>
