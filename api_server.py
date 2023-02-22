@@ -2,9 +2,9 @@ import os
 import shutil
 
 from fastapi import FastAPI, File, Response, status, UploadFile
-from starlette.requests import Request
 
 import main
+from starlette.requests import Request
 
 import uvicorn
 
@@ -25,12 +25,12 @@ else:
               status_code=201)
     async def receive_input(
             response: Response,
-            file:UploadFile = File(...)): 
+            file: UploadFile = File(...)):
         _, name = os.path.split(file.filename)
         path = "input_images/"
         if not os.path.isdir(path):
-            os.mkdir(path=path)
-        
+            os.mkdir(path = path)
+
         path_file = path + name
         with open(path_file, "wb") as buffer:
             shutil.copyfileobj(file.file, buffer)

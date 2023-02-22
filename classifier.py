@@ -19,10 +19,10 @@ class Classifier:
 
     def load_image(self):
         self.image = tf.keras.utils.load_img(
-        self.image_path,
-        target_size=(self.img_height, self.img_width)
+            self.image_path,
+            target_size=(self.img_height, self.img_width)
         )
-    
+
     def make_classification(self):
         img_array = tf.keras.utils.img_to_array(self.image)
         img_array = tf.expand_dims(img_array, 0) # Create a batch
@@ -34,4 +34,3 @@ class Classifier:
 
         classification = f"This image most likely belongs to {self.classified_class} with a {self.score} percent confidence."
         print(classification)
-        
