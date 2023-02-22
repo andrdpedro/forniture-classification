@@ -3,7 +3,7 @@ import tensorflow as tf
 
 
 class Classifier:
-    def __init__(self, model, image_path, class_names):
+    def __init__(self, model, image_path: str, class_names: list):
         self.model = model
         self.image_path = image_path
         self.class_names = class_names
