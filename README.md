@@ -10,7 +10,7 @@
 
 <h1 href="userguide">To use this project, you will need to:</h1>
 <ol>
-  <li> Install Docker in your personal Computer</li>
+  <li> Install Docker in your personal Computer https://www.docker.com/products/docker-desktop/</li>
   <li> open Docker application</li>
   <li> Clone this repository using git clone</li>
   <li> After cloning this repository, navigate to it using the terminal and type the following commands</li>
