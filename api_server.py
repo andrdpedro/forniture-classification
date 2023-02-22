@@ -1,10 +1,10 @@
 import os
-
-import main
 import shutil
 
-import uvicorn
+import main
+
 from fastapi import FastAPI, File, Response, status, UploadFile
+import uvicorn
 from starlette.requests import Request
 
 
@@ -20,13 +20,12 @@ else:
     app = FastAPI()
     model, class_names = main.run_model()
 
-    @app.post("/classifier_image", 
+    @app.post("/classifier_image",
               status_code=201)
     async def receive_input(
         request: Request,
         response: Response,
-        file:UploadFile = File(...)
-    ): 
+        file:UploadFile = File(...)): 
         _, name = os.path.split(file.filename)
         path = "input_images/"
         if not os.path.isdir(path):
