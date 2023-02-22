@@ -1,11 +1,12 @@
 import os
 import shutil
 
+from fastapi import FastAPI, File, Response, status, UploadFile
+from starlette.requests import Request
+
 import main
 
-from fastapi import FastAPI, File, Response, status, UploadFile
 import uvicorn
-from starlette.requests import Request
 
 
 def make_classification(file_name: str):
@@ -23,9 +24,8 @@ else:
     @app.post("/classifier_image",
               status_code=201)
     async def receive_input(
-        request: Request,
-        response: Response,
-        file:UploadFile = File(...)): 
+            response: Response,
+            file:UploadFile = File(...)): 
         _, name = os.path.split(file.filename)
         path = "input_images/"
         if not os.path.isdir(path):
