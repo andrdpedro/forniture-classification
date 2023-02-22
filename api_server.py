@@ -13,12 +13,12 @@ def make_classification(file_name: str):
     return score, classified_class
 
 if __name__ == "__main__":
-    uvicorn.run("api_server:app", port=5000, log_level="info")
+    uvicorn.run("api_server:app", port=8000, log_level="info")
 else:
     app = FastAPI()
     model, class_names = main.run_model()
 
-    @app.post("/classifie_image", status_code=201)
+    @app.post("/classifier_image", status_code=201)
     async def receive_input(
     request: Request,
     response: Response,
