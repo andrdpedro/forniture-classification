@@ -5,12 +5,18 @@
  <a href="#userguide">How to Use</a> • 
  <a href="#autor">Autor</a>
 </p>
+
 <h1 align="center" href="#objective">This project has the objective to classificate fornitures (Chair, Bed, Sofa), using Deep Learning</h1>
+
 <h1 href="#technologies">The technologies used in this project are:</h1>
 <p>- Tensorflow</p>
 <p>- Keras</p>
 <p>- FastAPI</p>
+
 <h1 href="userguide">To use this project, you will need to:</h1>
-
-
-
+<p>- Install Docker in your personal Computer</p>
+<p>- Clone this repository</p>
+<p>- After cloning this repository, navigate to it using the terminal and type the fallowing commands</p>
+<p>- docker build -t fornitureimage .</p>
+<p>- docker run -d --name forniturecontainer -p 80:80 fornitureimage</p>
+<p>- Now you can access the API on http://127.0.0.1/docs</p>
