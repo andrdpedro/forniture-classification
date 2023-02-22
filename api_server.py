@@ -1,9 +1,10 @@
-import main
 import os
-import shutil
-import uvicorn
 
-from fastapi import FastAPI, File, UploadFile, Response, status, Depends
+import main
+import shutil
+
+import uvicorn
+from fastapi import FastAPI, File, Response, status, UploadFile
 from starlette.requests import Request
 
 
@@ -12,19 +13,20 @@ def make_classification(file_name: str):
     score, classified_class = main.classification(file_name, model, class_names)
     return score, classified_class
 
+
 if __name__ == "__main__":
     uvicorn.run("api_server:app", port=8000, log_level="info")
 else:
     app = FastAPI()
     model, class_names = main.run_model()
 
-    @app.post("/classifier_image", status_code=201)
+    @app.post("/classifier_image", 
+              status_code=201)
     async def receive_input(
-    request: Request,
-    response: Response,
-    file:UploadFile = File(...)
-    ):
-
+        request: Request,
+        response: Response,
+        file:UploadFile = File(...)
+    ): 
         _, name = os.path.split(file.filename)
         path = "input_images/"
         if not os.path.isdir(path):
