@@ -1,6 +1,7 @@
+[![Tests](https://github.com/andrdpedro/hypermodern-python/workflows/Tests/badge.svg)](https://github.com/andrdpedro/hypermodern-python/actions?workflow=Tests)
 <h1 align="center">Forniture Classification</h1>
 
-<h1 align="center" href="#objective">This project has the objective to classificate fornitures (Chair, Bed, Sofa), using Deep Learning</h1>
+<h2 align="center" href="#objective">This project has the objective to classificate fornitures (Chair, Bed, Sofa), using Deep Learning</h2>
 
 <h1 href="#technologies">The technologies used in this project are:</h1>
 <p>- Tensorflow</p>
