@@ -11,7 +11,8 @@ def run_model():
 
 def classification(file_name: str, model, class_names):
     classifier = Classifier(
-        model,file_name,
+        model,
+        file_name,
         class_names)
     classifier.classifie_image()
     return classifier.score, classifier.classified_class

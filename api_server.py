@@ -2,10 +2,7 @@ import os
 import shutil
 
 from fastapi import FastAPI, File, Response, status, UploadFile
-
 import main
-from starlette.requests import Request
-
 import uvicorn
 
 
@@ -29,7 +26,7 @@ else:
         _, name = os.path.split(file.filename)
         path = "input_images/"
         if not os.path.isdir(path):
-            os.mkdir(path = path)
+            os.mkdir(path=path)
 
         path_file = path + name
         with open(path_file, "wb") as buffer:

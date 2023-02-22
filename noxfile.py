@@ -1,4 +1,3 @@
-# noxfile.py
 import nox
 
 

@@ -25,7 +25,7 @@ class Classifier:
 
     def make_classification(self):
         img_array = tf.keras.utils.img_to_array(self.image)
-        img_array = tf.expand_dims(img_array, 0) # Create a batch
+        img_array = tf.expand_dims(img_array, 0)
 
         predictions = self.model.predict(img_array)
         score = tf.nn.softmax(predictions[0])
