@@ -10,7 +10,7 @@
 <h1 href="userguide">To use this project, you will need to:</h1>
 <p>- Install Docker in your personal Computer</p>
 <p>- Clone this repository</p>
-<p>- After cloning this repository, navigate to it using the terminal and type the fallowing commands</p>
+<p>- After cloning this repository, navigate to it using the terminal and type the following commands</p>
 <p>- docker build -t fornitureimage .</p>
 <p>- docker run -d --name forniturecontainer -p 80:80 fornitureimage</p>
 <p>- Now you can access the API on http://127.0.0.1/docs</p>
