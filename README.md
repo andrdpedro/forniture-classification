@@ -7,9 +7,9 @@
 </p>
 <h1 align="center" href="#objective">This project has the objective to classificate fornitures (Chair, Bed, Sofa), using Deep Learning</h1>
 <h1 href="#technologies">The technologies used in this project are:</h1>
-- Tensorflow
-- Keras
-- FastAPI
+<a>- Tensorflow</a>
+<a>- Keras</a>
+<a>- FastAPI</a>
 <h1 href="userguide">To use this project, you will need to:</h1>
 
 
