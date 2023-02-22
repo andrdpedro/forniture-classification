@@ -5,12 +5,12 @@
  <a href="#userguide">How to Use</a> • 
  <a href="#autor">Autor</a>
 </p>
-<p align="center" href="#objective">This project has the objective to classificate fornitures (Chair, Bed, Sofa), using Deep Learning</p>
-<p href="#technologies">The technologies used in this project are:</p>
+<h1 align="center" href="#objective">This project has the objective to classificate fornitures (Chair, Bed, Sofa), using Deep Learning</h1>
+<h1 href="#technologies">The technologies used in this project are:</h1>
 - Tensorflow
 - Keras
 - FastAPI
-<p href="userguide">To use this project, you will need to:</p>
+<h1 href="userguide">To use this project, you will need to:</h1>
 
 
 
