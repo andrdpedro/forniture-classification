@@ -78,7 +78,7 @@ class Training:
         )
 
     def train_model(self):
-        epochs = 10
+        epochs = 15
         self.model.fit(
             self.train_data,
             validation_data=self.val_data,
