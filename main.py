@@ -7,7 +7,7 @@ def run_model():
     class_names = training.class_names
     return model, class_names
 
-def classifie(file_name: str, model, class_names):
+def classification(file_name: str, model, class_names):
     classifier = Classifier(model, file_name, class_names)
     classifier.classifie_image()
     
@@ -15,4 +15,4 @@ def classifie(file_name: str, model, class_names):
 
 if __name__ == "__main__":
     model, class_names = run_model()
-    classifie("cama.jpg", model, class_names)
+    classification("cama.jpg", model, class_names)
