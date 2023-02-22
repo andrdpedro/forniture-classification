@@ -1,10 +1,4 @@
 <h1 align="center">Forniture Classification</h1>
-<p align="center">
- <a href="#objective">Objetivo</a> •
- <a href="#technologies">Technologies</a> • 
- <a href="#userguide">How to Use</a> • 
- <a href="#author">Author</a>
-</p>
 
 <h1 align="center" href="#objective">This project has the objective to classificate fornitures (Chair, Bed, Sofa), using Deep Learning</h1>
 
