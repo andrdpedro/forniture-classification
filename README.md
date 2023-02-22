@@ -14,7 +14,6 @@
   <li> open Docker application</li>
   <li> Clone this repository using git clone</li>
   <li> After cloning this repository, navigate to it using the terminal and type the following commands</li>
-  <li> Clone this repository using git clone</li>
   <li> docker build -t fornitureimage .</li>
   <li> docker run -d --name forniturecontainer -p 80:80 fornitureimage</li>
   <li> After the last command notice that you need to wait some time as it is training the model</li>
